@@ -127,3 +127,6 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.gatekeeper.is_security_level_spu=0
 -include device/fairphone/fps/kernel-platform.mk
 
 BOARD_HAS_QCOM_WLAN := true
+
+# Enable Dual SIM by default
+PRODUCT_PROPERTY_OVERRIDES += persist.radio.multisim.config=dsds
