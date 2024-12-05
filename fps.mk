@@ -21,3 +21,5 @@ endif
 # Kernel modules install path
 KERNEL_MODULES_INSTALL := dlkm
 KERNEL_MODULES_OUT := out/target/product/$(PRODUCT_NAME)/$(KERNEL_MODULES_INSTALL)/lib/modules
+
+$(call inherit-product, device/fairphone/common/common_vendor.mk)
