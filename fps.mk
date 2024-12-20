@@ -81,3 +81,6 @@ PRODUCT_COPY_FILES += \
 
 #FPS-3303 add ccode at vendor layer
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.odm.ccode=other
+
+# Inherit the proprietary setup
+$(call inherit-product, device/fairphone/fp6-proprietary/device-vendor.mk)
