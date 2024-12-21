@@ -11,8 +11,12 @@ include device/qcom/volcano/volcano.mk
 PRODUCT_NAME := fps
 PRODUCT_DEVICE := fps
 PRODUCT_BRAND := Fairphone
-PRODUCT_MODEL := FpSpring
+PRODUCT_MODEL := Fairphone 6
 PRODUCT_MANUFACTURER := Fairphone
+
+# OVERRIDE_TARGET_PRODUCT change
+OVERRIDE_TARGET_PRODUCT := FP6
+OVERRIDE_TARGET_DEVICE := FP6
 
 ifneq ("$(wildcard device/fairphone/fps-kernel/vendor_dlkm/system_dlkm.modules.blocklist)", "")
   PRODUCT_COPY_FILES += device/fairphone/fps-kernel/vendor_dlkm/system_dlkm.modules.blocklist:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/system_dlkm.modules.blocklist
