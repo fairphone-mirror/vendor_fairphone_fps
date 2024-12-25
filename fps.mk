@@ -27,3 +27,20 @@ KERNEL_MODULES_INSTALL := dlkm
 KERNEL_MODULES_OUT := out/target/product/$(PRODUCT_NAME)/$(KERNEL_MODULES_INSTALL)/lib/modules
 
 $(call inherit-product, device/fairphone/common/common_vendor.mk)
+
+
+#----------------------------------------------------------------------
+# fps haptic Firmware
+#----------------------------------------------------------------------
+PRODUCT_COPY_FILES += \
+    device/fairphone/fps/haptic_hv/haptic_ram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_ram.bin
+PRODUCT_COPY_FILES += \
+    device/fairphone/fps/haptic_hv/haptic_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_rtp.bin
+PRODUCT_COPY_FILES += \
+    device/fairphone/fps/haptic_hv/haptic_rtp_auto_sin.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_rtp_auto_sin.bin
+PRODUCT_COPY_FILES += \
+    device/fairphone/fps/haptic_hv/haptic_rtp_lighthouse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_rtp_lighthouse.bin
+PRODUCT_COPY_FILES += \
+    device/fairphone/fps/haptic_hv/haptic_rtp_osc_24K_5s.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_rtp_osc_24K_5s.bin
+PRODUCT_COPY_FILES += \
+    device/fairphone/fps/haptic_hv/haptic_rtp_silk.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_rtp_silk.bin
