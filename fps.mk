@@ -28,6 +28,9 @@ KERNEL_MODULES_OUT := out/target/product/$(PRODUCT_NAME)/$(KERNEL_MODULES_INSTAL
 
 $(call inherit-product, device/fairphone/common/common_vendor.mk)
 
+TARGET_BUILD_WIDEVINE := nonupdatable
+TARGET_BUILD_WIDEVINE_USE_PREBUILT := true
+-include vendor/widevine/libwvdrmengine/apex/device/device.mk
 
 #----------------------------------------------------------------------
 # fps haptic Firmware
