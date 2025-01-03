@@ -26,6 +26,11 @@ endif
 KERNEL_MODULES_INSTALL := dlkm
 KERNEL_MODULES_OUT := out/target/product/$(PRODUCT_NAME)/$(KERNEL_MODULES_INSTALL)/lib/modules
 
+# audio smart pa aw88261 i2s_stereo_16 firmware
+PRODUCT_COPY_FILES += \
+    device/fairphone/fps/audio/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_acf.bin
+
+
 $(call inherit-product, device/fairphone/common/common_vendor.mk)
 
 TARGET_BUILD_WIDEVINE := nonupdatable
