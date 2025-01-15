@@ -11,7 +11,7 @@ include device/qcom/volcano/volcano.mk
 PRODUCT_NAME := fps
 PRODUCT_DEVICE := fps
 PRODUCT_BRAND := Fairphone
-PRODUCT_MODEL := Fairphone 6
+PRODUCT_MODEL := The Fairphone (Gen. 6)
 PRODUCT_MANUFACTURER := Fairphone
 
 # OVERRIDE_TARGET_PRODUCT change
