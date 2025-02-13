@@ -56,3 +56,8 @@ PRODUCT_COPY_FILES += \
     device/fairphone/fps/haptic_hv/haptic_rtp_osc_24K_5s.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_rtp_osc_24K_5s.bin
 PRODUCT_COPY_FILES += \
     device/fairphone/fps/haptic_hv/haptic_rtp_silk.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_rtp_silk.bin
+
+#add by yangxuguang for Resize userdata [FPS-52]
+PRODUCT_BUILD_USERDATA_IMAGE := false
+BOARD_PREBUILT_USERDATAIMAGE := device/fairphone/fps/userdata.img
+#add end
