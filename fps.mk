@@ -33,7 +33,9 @@ KERNEL_MODULES_OUT := out/target/product/$(PRODUCT_NAME)/$(KERNEL_MODULES_INSTAL
 # audio smart pa aw88261 i2s_stereo_16 firmware
 PRODUCT_COPY_FILES += \
     device/fairphone/fps/audio/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_acf.bin
-
+# audio smart pa firmware version
+PRODUCT_COPY_FILES += \
+    device/fairphone/fps/audio/aw882xx_ver:$(TARGET_COPY_OUT_VENDOR)/etc/aw882xx_ver
 
 $(call inherit-product, device/fairphone/common/common_vendor.mk)
 
