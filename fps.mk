@@ -22,6 +22,13 @@ PRODUCT_MODEL_FOR_ATTESTATION := Fairphone 6
 PRODUCT_BRAND_FOR_ATTESTATION := Fairphone
 PRODUCT_NAME_FOR_ATTESTATION := FP6
 
+ifndef FAIRPHONE_REL_TYPE
+  FAIRPHONE_REL_TYPE := DEV
+endif
+ifneq ($(wildcard $(TOPDIR)version/version.ini),)
+  FAIRPHONE_BUILD_NUMBER := $(shell awk '/BUILD_AP_VER/ {print $$3}' $(TOPDIR)version/version.ini)
+endif
+
 ifneq ("$(wildcard device/fairphone/fps-kernel/vendor_dlkm/system_dlkm.modules.blocklist)", "")
   PRODUCT_COPY_FILES += device/fairphone/fps-kernel/vendor_dlkm/system_dlkm.modules.blocklist:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/system_dlkm.modules.blocklist
 endif
