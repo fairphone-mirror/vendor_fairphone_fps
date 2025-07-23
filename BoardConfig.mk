@@ -1,5 +1,7 @@
 include device/qcom/volcano/BoardConfig.mk
 
+BOARD_DTBOIMG_PARTITION_SIZE := 0x1E00000
+
 ifeq ($(BUILD_WITH_RELEASEKEY),true)
 ifeq ($(BOARD_AVB_ENABLE), true)
 BOARD_AVB_RECOVERY_KEY_PATH := vendor/fairphone/release-keys/certificate/avb/boot_rsa4096.pem
