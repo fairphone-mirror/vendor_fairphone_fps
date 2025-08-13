@@ -78,3 +78,6 @@ BOARD_PREBUILT_USERDATAIMAGE := device/fairphone/fps/userdata.img
 #set wlan mac [FPS-70]
 PRODUCT_COPY_FILES += \
         device/fairphone/fps/setwlanmac.sh:$(TARGET_COPY_OUT_VENDOR)/bin/setwlanmac.sh
+
+#FPS-3303 add ccode at vendor layer
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.odm.ccode=other
