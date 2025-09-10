@@ -81,3 +81,5 @@ PRODUCT_COPY_FILES += \
 
 #FPS-3303 add ccode at vendor layer
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.odm.ccode=other
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += remote_provisioning.tee.rkp_only=true
+
