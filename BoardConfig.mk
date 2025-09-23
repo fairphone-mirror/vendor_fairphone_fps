@@ -9,6 +9,11 @@ BOARD_AVB_BOOT_KEY_PATH := vendor/fairphone/release-keys/certificate/avb/boot_rs
 BOARD_AVB_BOOT_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_KEY_PATH := vendor/fairphone/release-keys/certificate/avb/boot_rsa4096.pem
 BOARD_AVB_ALGORITHM := SHA256_RSA4096
+
+BOARD_AVB_INIT_BOOT_KEY_PATH := vendor/fairphone/release-keys/certificate/avb/boot_rsa4096.pem
+BOARD_AVB_INIT_BOOT_ALGORITHM := SHA256_RSA4096
+BOARD_AVB_INIT_BOOT_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
+BOARD_AVB_INIT_BOOT_ROLLBACK_INDEX_LOCATION := 4
 endif
 
 include device/fairphone/common/BoardConfigCommon.mk
