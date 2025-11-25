@@ -88,3 +88,5 @@ $(call inherit-product, device/fairphone/fp6-proprietary/device-vendor.mk)
 PRODUCT_PROPERTY_OVERRIDES += vendor.gatekeeper.is_security_level_spu=0
 
 -include device/fairphone/fps/kernel-platform.mk
+
+BOARD_HAS_QCOM_WLAN := true
