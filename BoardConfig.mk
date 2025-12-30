@@ -7,10 +7,12 @@ ifeq ($(BOARD_AVB_ENABLE), true)
 BOARD_AVB_RECOVERY_KEY_PATH := vendor/fairphone/release-keys/certificate/avb/boot_rsa4096.pem
 BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
 endif
-#BOARD_AVB_BOOT_KEY_PATH := vendor/fairphone/release-keys/certificate/avb/boot_rsa4096.pem
-#BOARD_AVB_BOOT_ALGORITHM := SHA256_RSA4096
+BOARD_AVB_BOOT_KEY_PATH := vendor/fairphone/release-keys/certificate/avb/boot_rsa4096.pem
+BOARD_AVB_BOOT_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_KEY_PATH := vendor/fairphone/release-keys/certificate/avb/boot_rsa4096.pem
 BOARD_AVB_ALGORITHM := SHA256_RSA4096
+BOARD_AVB_INIT_BOOT_KEY_PATH := vendor/fairphone/release-keys/certificate/avb/boot_rsa4096.pem
+BOARD_AVB_INIT_BOOT_ALGORITHM := SHA256_RSA4096
 endif
 
 include device/fairphone/common/BoardConfigCommon.mk
